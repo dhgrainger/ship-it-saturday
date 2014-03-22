@@ -7,13 +7,13 @@
   <script src="shipit.js"></script>
 </head>
 <body>
+  <h1>Krash Provision Selector Page</h1>
   <form id="data" action="/order" method="post">
-    <ol>
-      <li>Enter Your Name: <br>
-        <label for="name">Name: </label>
-          <input type="text" id="name" name="name" size="20">
-      </li>
-      <li>Enter Your House: <br>
+    <p>
+        <label for="name">Enter Your Name: </label>
+        <input type="text" id="name" name="name" size="20">
+
+      <label for="house">Select Your House: </label>
         <select id="house" name="house">
           <option value="Charlestown Unit 4">Charlestown Unit 4</option>
           <option value="Charlestown Unit 5">Charlestown Unit 5</option>
@@ -28,21 +28,22 @@
           <option value="Porter Beacon Floor 2">Porter Beacon Floor 2</option>
           <option value="Porter Beacon Floor 3">Porter Beacon Floor 3</option>
         </select>
-      </li>
-      <li>What would you like delivered this week?<br>
+    </p>
+    <h2>Select Your Supplies</h2>
+    <p>
         <input type="checkbox" id="milk" name="milk" value=milk>
-          <label for="milk">Milk</label><br>
+          <label for="milk">Milk</label>
         <input type="checkbox" id="apples" name="apples" value=apples>
-          <label for="apples">Apples</label><br>
+          <label for="apples">Apples</label>
         <input type="checkbox" id="coffee" name="coffee" value=coffee>
-          <label for="coffee">Coffee</label><br>
-      </li>
-    </ol>
+          <label for="coffee">Coffee</label>
+    </p>
     <p>
       <input type="button" id="generateButton" value="Select">
       <input type="submit" id="clearButton" value="Order">
     </p>
   </form>
+  <h2>Your Cart</h2>
   <div id="order">
   </div>
 </body>
