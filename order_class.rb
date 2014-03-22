@@ -1,4 +1,4 @@
-require'CSV'
+require 'csv'
 
 class FoodOrder
   attr_reader :name, :house, :items

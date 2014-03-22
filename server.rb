@@ -1,5 +1,5 @@
 require 'sinatra'
-require 'CSV'
+require 'csv'
 
 require_relative'order_class.rb'
 file = 'orders.csv'
