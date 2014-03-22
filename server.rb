@@ -17,10 +17,8 @@ get '/' do
 end
 
 get '/orders' do
-
   @orders = FoodOrder.read(file)
   erb :order
-
 end
 
 

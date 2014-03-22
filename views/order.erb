@@ -22,11 +22,7 @@
          <tr>
           <td><%= order[:house] %></td>
           <td><%= order[:name] %></td>
-
-          <% order[:items].each do |item| %>
-            <td><%= item %></td>
-          <% end %>
-
+          <td><%= order[:items].map {|i| i.to_s}.join(" ") %></td>
           </tr>
 
       <% end %>
