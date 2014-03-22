@@ -47,9 +47,9 @@ input#article {
 
 }
 
-input#button {
-    border-radius: 1px;
+input#clearButton {
+    border-radius: 5px;
     background-color: white;
     text-align: center;
-
+    width: 50px;
 }
