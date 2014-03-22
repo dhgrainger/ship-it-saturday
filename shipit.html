@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Grocery Delivery</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="public/shipit.css">
+  <script src="public/shipit.js"></script>
+</head>
+<body>
+  <form id="data" action="/order" method="post">
+    <ol>
+      <li>Enter Your Name: <br>
+        <label for="name">Name: </label>
+          <input type="text" id="name" size="20">
+      </li>
+      <li>Enter Your House: <br>
+        <select id="house">
+          <option value="Charlestown Unit 4">Charlestown Unit 4</option>
+          <option value="Charlestown Unit 5">Charlestown Unit 5</option>
+          <option value="Charlestown Unit 6">Charlestown Unit 6</option>
+          <option value="Central Floor 1">Central Floor 1</option>
+          <option value="Central Floor 2">Central Floor 2</option>
+          <option value="Central Floor 3">Central Floor 3</option>
+          <option value="Porter Harrison Floor 1">Porter HarrisonFloor 1</option>
+          <option value="Porter Harrison Floor 2">Porter HarrisonFloor 2</option>
+          <option value="Porter Harrison Floor 3">Porter Harrison Floor 3</option>
+          <option value="Porter Beacon Floor 1">Porter Beacon Floor 1</option>
+          <option value="Porter Beacon Floor 2">Porter Beacon Floor 2</option>
+          <option value="Porter Beacon Floor 3">Porter Beacon Floor 3</option>
+        </select>
+      </li>
+      <li>What would you like delivered this week?<br>
+        <input type="checkbox" id="milk" name="milk" value="milk">
+          <label for="milk">Milk</label><br>
+        <input type="checkbox" id="apples" name="apples" value="apples">
+          <label for="apples">Apples</label><br>
+        <input type="checkbox" id="coffee" name="coffee" value="coffee">
+          <label for="coffee">Coffee</label><br>
+      </li>
+    </ol>
+    <p>
+      <input type="button" id="generateButton" value="Select">
+      <input type="button" id="clearButton" value="Order">
+    </p>
+  </form>
+  <div id="order">
+  </div>
+</body>
+</html>

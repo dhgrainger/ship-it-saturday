@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<head>
+  <title>Krash Orders!</title>
+     <link rel="stylesheet" href="home.css">
+  </head>
+
+  <body>
+
+    <h1>Krash Orders</h1>
+
+
+    <table>
+     <tr>
+      <th>Unit</th>
+       <th>Ordered By</th>
+      <th>Items</th>
+
+
+      <% @orders.each do |order| %>
+
+         <tr>
+          <td><%= order[:house] %></td>
+          <td><%= order[:name] %></td>
+
+          <% order[:items].each do |item| %>
+            <td><%= item %></td>
+          <% end %>
+
+          </tr>
+
+      <% end %>
+    </table>
+  </body>
+</html>
