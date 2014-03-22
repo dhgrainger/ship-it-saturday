@@ -1,7 +1,5 @@
 require 'sinatra'
 require 'CSV'
-require 'shotgun'
-require 'pry'
 
 require_relative'order_class.rb'
 file = 'orders.csv'

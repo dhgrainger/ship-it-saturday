@@ -1,5 +1,4 @@
 require'CSV'
-require 'pry'
 
 class FoodOrder
   attr_reader :name, :house, :items
