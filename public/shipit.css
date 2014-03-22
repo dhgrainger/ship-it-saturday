@@ -17,18 +17,7 @@ body {
 }
 h1 {text-align: center;}
 
-ul {
 
-    width: 300px;
-    padding: 10, 20, 10, 20;
-    text-align: center;
-    margin: auto;
-}
-
-li {
-    /* Add a bit more spacing between list items. */
-    padding: 5px;
-}
 th {
     text-decoration: underline;
     text-align: center;
@@ -39,12 +28,7 @@ table {
     text-align: center;
     margin: auto;
     padding: 20px;
-}
-
-input#article {
-    width: 600px;
-    height: 200px;
-
+    background-color: white;
 }
 
 
