@@ -12,7 +12,6 @@ function init() {
         var addCoffee = document.getElementById("coffee");
   addCoffee.onclick = coffeeDisplay;
 
-
   }
 
 function milkDisplay() {
@@ -22,12 +21,15 @@ function milkDisplay() {
 
   var orderDiv = document.getElementById("order");
   var imgMilk = document.createElement('img');
-
+  imgMilk.setAttribute("id", 1);
+  imgMilk.src = 'milk.jpg';
 
   if (milk.checked == true) {
-
-    imgMilk.src = 'milk.jpg';
-    orderDiv.appendChild(imgMilk) ;
+    orderDiv.appendChild(imgMilk);
+  }
+  else {
+    imgMilk = document.getElementById(1);
+    orderDiv.removeChild(imgMilk);
   }
 }
 
@@ -37,24 +39,36 @@ function applesDisplay() {
   var apples = data.elements.apples;
 
   var orderDiv = document.getElementById("order");
+  var imgApple = document.createElement('img');
+  imgApple.setAttribute("id", 2);
+  imgApple.src = 'apples.jpg';
 
  if (apples.checked == true) {
-    var img = document.createElement('img');
-    img.src = 'apples.jpg';
-    orderDiv.appendChild(img) ;
+
+    orderDiv.appendChild(imgApple);
    }
+  else {
+    imgApple = document.getElementById(2);
+    orderDiv.removeChild(imgApple);
+  }
+
 }
 
 function coffeeDisplay() {
 
   var data = document.forms.data;
   var coffee = data.elements.coffee;
-
   var orderDiv = document.getElementById("order");
+  var imgCoffee = document.createElement('img');
+  imgCoffee.setAttribute("id", 3)
+  imgCoffee.src = 'coffee.jpg';
 
    if (coffee.checked == true) {
-    var img = document.createElement('img');
-    img.src = 'coffee.jpg';
-    orderDiv.appendChild(img) ;
+    orderDiv.appendChild(imgCoffee) ;
    }
+  else {
+    img = document.getElementById(3);
+    orderDiv.removeChild(img);
+  }
+
 }
