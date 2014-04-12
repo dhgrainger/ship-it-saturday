@@ -5,7 +5,7 @@ require_relative'order_class.rb'
 file = 'orders.csv'
 
 post '/order' do
-  items = [params['milk'], params['apples'], params['coffee']]
+  items = [params['milk'], params['apples'], params['coffee'], params['detergent']]
   order = FoodOrder.new(params['name'], params['house'], items)
   order.write(file)
   redirect '/'
