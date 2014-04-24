@@ -57,7 +57,7 @@ function init() {
   var coffee = new Item("coffee", "coffee.jpg");
   coffee.buildCheck();
 
-  var detergent = new Item("detergent", "http://www.southernsavers.com/wp-content/uploads/2013/01/Tide-Liquid-Detergent.jpg");
+  var detergent = new Item("detergent", "detergent.jpg");
   detergent.buildCheck();
 
 }
